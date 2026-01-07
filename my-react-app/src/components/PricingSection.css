@@ -1,0 +1,349 @@
+/* Pricing Plans Styles */
+.pricing {
+  background: #f5f7fa;
+  padding: 5rem 2rem;
+}
+
+.pricing-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.pricing-title {
+  color: var(--color-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 3rem 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-card {
+  background: white;
+  border: 2px solid #e0e7ff;
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #e0e7ff;
+  color: var(--color-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.plan-name {
+  color: var(--color-black);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.plan-price {
+  margin-bottom: 2rem;
+}
+
+.price {
+  color: var(--color-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.period {
+  color: #666;
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.plan-features li {
+  color: var(--color-black);
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 2;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.check-icon {
+  color: #10b981;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.plan-button {
+  width: 100%;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.plan-button:hover {
+  background: var(--color-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.advance-plan {
+  background: var(--color-primary);
+  border-radius: 12px;
+  padding: 2rem;
+  color: white;
+}
+
+.advance-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.advance-info {
+  flex: 1;
+}
+
+.advance-plan .plan-name {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.advance-plan .plan-features {
+  margin-bottom: 1.5rem;
+}
+
+.advance-plan .plan-features li {
+  color: white;
+  font-size: 14px;
+}
+
+.advance-bonuses {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bonus-item {
+  color: white;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bonus-icon {
+  font-size: 16px;
+}
+
+.advance-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.advance-price {
+  text-align: right;
+}
+
+.advance-price .price {
+  color: white;
+}
+
+.advance-plan .plan-button {
+  background: white;
+  color: var(--color-primary);
+  min-width: 150px;
+}
+
+.advance-plan .plan-button:hover {
+  background: var(--color-dark);
+  color: white;
+}
+
+/* Services Styles */
+.services {
+  background: white;
+  padding: 5rem 2rem;
+}
+
+.services-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.services-header {
+  margin-bottom: 3rem;
+}
+
+.services-title {
+  color: var(--color-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+}
+
+.services-subtitle {
+  color: #666;
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  max-width: 600px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  border: 2px solid #e0e7ff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-name {
+  color: var(--color-black);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.service-description {
+  color: #666;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.5;
+  margin: 0 0 1.5rem 0;
+}
+
+.service-price {
+  margin-bottom: 2rem;
+}
+
+.service-price .price {
+  color: var(--color-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.service-price .period {
+  color: #666;
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.service-features li {
+  color: var(--color-black);
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 2;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.service-features .check-icon {
+  color: #10b981;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.service-button {
+  width: 100%;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.service-button:hover {
+  background: var(--color-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .advance-content {
+    flex-direction: column;
+  }
+  
+  .advance-pricing {
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}

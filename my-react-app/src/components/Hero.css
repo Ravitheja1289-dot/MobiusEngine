@@ -1,0 +1,220 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding-top: 80px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  color: var(--color-white);
+  line-height: 1.1;
+  margin: 0 0 1.5rem 0;
+}
+
+.highlight {
+  color: var(--color-primary);
+  display: inline-block;
+}
+.highlight-white {
+  color: var(--color-white);
+  display: inline-block;
+}
+.hero-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin: 0 0 2.5rem 0;
+}
+
+.hero-button {
+  background: var(--color-white);
+  color: var(--color-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-button:hover {
+  background: var(--color-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-ebook {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.ebook-container {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin-bottom: 1.5rem;
+}
+
+.ebook-cover {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(0, 0, 0, 0.1);
+  transform: perspective(1000px) rotateY(-5deg);
+  position: relative;
+  z-index: 2;
+}
+
+.ebook-content {
+  padding: 2.5rem 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 8px;
+}
+
+.ebook-year {
+  color: #6B8CFF;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 1px;
+}
+
+.ebook-title {
+  color: #1a1a1a;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 1.5rem 0;
+  line-height: 1;
+}
+
+.ebook-description {
+  color: #4a4a4a;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 auto 0;
+}
+
+.ebook-separator {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #ddd, transparent);
+  margin: 1.5rem 0;
+}
+
+.ebook-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ebook-logo span {
+  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.ebook-url {
+  color: #888;
+  font-size: 0.85rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.floating-book {
+  position: absolute;
+  right: -30px;
+  bottom: 50px;
+  width: 120px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.ebook-download {
+  color: white;
+  font-size: 0.85rem;
+  margin: 0;
+  text-align: center;
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .ebook-container {
+    width: 280px;
+    height: 400px;
+  }
+}
