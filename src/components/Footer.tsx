@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-bottom">
-          <p className="footer-copyright">© 2023 Mobiusservices LLC</p>
+          <p className="footer-copyright">© 2025 Mobiusservices LLC</p>
           <div className="footer-links">
             <a href="#" className="footer-link">Terms & Conditions</a>
             <a href="#" className="footer-link">Privacy Policy</a>
