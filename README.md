@@ -1,4 +1,4 @@
-# My React App
+# MobiusEngine
 
 A modern, responsive landing page built with React, TypeScript, and Vite. This project showcases a professional website layout with sections for hero content, features, about information, pricing, contact form, and footer.
 
